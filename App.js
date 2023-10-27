@@ -1,15 +1,15 @@
-import React, {useEffect, useState} from 'react';
-import {SafeAreaView, StatusBar, View, StyleSheet} from 'react-native';
-import ChatScreen from './screens/chatScreen';
-import auth from '@react-native-firebase/auth';
-import LoginScreen from './screens/loginScreen';
+import React, { useEffect, useState } from "react";
+import { SafeAreaView, StatusBar, View, StyleSheet } from "react-native";
+import ChatScreen from "./screens/ChatScreen";
+import auth from "@react-native-firebase/auth";
+import LoginScreen from "./screens/loginScreen";
 
 const App = () => {
   const [user, setUser] = useState(null);
 
   useEffect(() => {
     // Auth listener
-    const unsubscribe = auth().onAuthStateChanged(user => {
+    const unsubscribe = auth().onAuthStateChanged((user) => {
       user ? setUser(user) : setUser(null);
     });
     return () => {
@@ -19,7 +19,7 @@ const App = () => {
 
   return (
     <SafeAreaView style={styles.backgroundStyle}>
-      <StatusBar barStyle={'dark-content'} />
+      <StatusBar barStyle={"dark-content"} />
       <View style={styles.viewStyle}>
         {user ? <ChatScreen /> : <LoginScreen />}
       </View>
