@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { SafeAreaView, StatusBar, View, StyleSheet } from "react-native";
-import ChatScreen from "./screens/ChatScreen";
+import ChatScreen from "./screens/ChatScreen.js";
 import auth from "@react-native-firebase/auth";
-import LoginScreen from "./screens/loginScreen";
+import LoginScreen from "./screens/LoginScreen.js";
 
 const App = () => {
   const [user, setUser] = useState(null);
