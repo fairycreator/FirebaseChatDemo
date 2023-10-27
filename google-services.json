@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "55312657984",
+    "project_id": "awesome-project-7a8b0",
+    "storage_bucket": "awesome-project-7a8b0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:55312657984:android:12eda422adb459de5ff9a5",
+        "android_client_info": {
+          "package_name": "com.yourcompanyname.FirebaseChatDemo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGltuoF-XirS-VAW3n6Z8l3HjHPgaPUFM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
