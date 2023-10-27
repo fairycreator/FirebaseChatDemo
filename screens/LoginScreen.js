@@ -12,7 +12,7 @@ const LoginScreen = () => {
   GoogleSignin.configure({
 
     // Pulled from Google Authentication settings in Firebase console
-    webClientId: 'YOUR_CLIENT_ID.apps.googleusercontent.com',
+    webClientId: '55312657984-qjp4s6jkprrgb19tg4p978ekenmngtiq.apps.googleusercontent.com',
   });
 
   const handleLogin = async () => {
